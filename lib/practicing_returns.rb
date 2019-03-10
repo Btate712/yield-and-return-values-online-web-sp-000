@@ -6,4 +6,3 @@ end
 
 array = ["Tim", "Tom", "Jim"]
 hello(array)
-
