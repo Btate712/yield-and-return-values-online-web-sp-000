@@ -1,12 +1,9 @@
 require 'pry'
 
 def hello(array)
-  i = 0
-  while i < array.length
-    yield(array[i])
-    i += 1
-  end
+  array.each do |name| {puts "Hi, #{name}"}
 end
 
+array = ["Tim", "Tom", "Jim"]
+hello(array)
 
-hello(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
